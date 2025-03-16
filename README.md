@@ -11,3 +11,15 @@ Headline: A healthy meal delivered to your door, every single day
 ### Summary
 
 The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
+
+## Sections
+
+- Logo , Navigation
+- Hero
+- Featiured in
+- How it works
+- Meals (and list of diets)
+- Testimonials + Gallery
+- Pricing + Features
+- Call to action
+- Footer
