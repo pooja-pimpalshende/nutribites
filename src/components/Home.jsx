@@ -15,10 +15,10 @@ const Home = () => {
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" className="btn">
+            <a href="#" className="btn btn--full margin-right-sm">
               Start eating well
             </a>
-            <a href="a" className="btn">
+            <a href="#" className="btn btn--outline">
               Learn more &darr;
             </a>
           </div>
