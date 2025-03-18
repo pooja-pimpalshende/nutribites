@@ -1,19 +1,18 @@
-/* .section-hero {
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.6),
-      rgba(34, 34, 34, 0.6)
-    ),
-    url("../assets/img/eating.jpg");
-} */
-
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
+  /* background-image: linear-gradient(
+      rgba(253, 242, 233, 0.86),
+      rgb(253, 242, 233)
+    ),
+    url("../assets/img/bg.jpg");
+  background-size: contain; */
 }
 
 .hero {
   max-width: 130rem;
   margin: auto;
+  padding: 2.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
