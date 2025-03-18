@@ -16,8 +16,13 @@ Bold : 700
 - Line heights
 Default: 1
 small: 1.05
+medium: 1.2
 paragraph:1.6
 
+- Letter spacing
+ 0.5px
+ 0.75px
+ 
 --- 02 COLORS
 
 - Primary: #e67e22
