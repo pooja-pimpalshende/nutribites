@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Hero.css";
 import heroImg from "../assets/img/hero.png";
 import { useEffect, useState } from "react";
 import Header from "./Header";
@@ -25,10 +25,10 @@ const CustomerGallery = () => {
   );
 };
 
-const Home = () => {
+const Hero = () => {
   return (
     <>
-      {<Header />}
+      {/* {<Header />} */}
 
       <main>
         <section className="section-hero">
@@ -68,4 +68,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Hero;

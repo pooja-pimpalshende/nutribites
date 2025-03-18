@@ -11,8 +11,8 @@
 
 .hero {
   max-width: 130rem;
-  margin: auto;
-  padding: 2.4rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
