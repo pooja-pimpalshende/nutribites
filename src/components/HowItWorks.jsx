@@ -14,7 +14,7 @@ const HowItWorks = () => {
           </h2>
         </div>
 
-        <div className="container grid grid--2--cols">
+        <div className="container grid grid--2--cols grid--center-v">
           {/* STEP-01 */}
           <div className="step-text-box">
             <p className="step-number">01</p>
