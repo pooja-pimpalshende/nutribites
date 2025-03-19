@@ -1,35 +1,13 @@
 import "./Hero.css";
 import heroImg from "../assets/img/hero.png";
-import { useEffect, useState } from "react";
 import Header from "./Header";
+import ImageGallery from "../utils/ImageGallery";
 
 const images = import.meta.glob("../assets/img/customers/customer-*.jpg");
-
-const CustomerGallery = () => {
-  const [imageUrls, setImageUrls] = useState([]);
-
-  useEffect(() => {
-    Promise.all(
-      Object.values(images).map((importFn) =>
-        importFn().then((mod) => mod.default)
-      )
-    ).then(setImageUrls);
-  }, []);
-
-  return (
-    <div className="dilivered-imgs">
-      {imageUrls.map((src, index) => (
-        <img key={index} src={src} alt={`Customer ${index + 1}`} />
-      ))}
-    </div>
-  );
-};
 
 const Hero = () => {
   return (
     <>
-      {/* {<Header />} */}
-
       <main>
         <section className="section-hero">
           <div className="hero">
@@ -49,7 +27,8 @@ const Hero = () => {
                 Learn more &darr;
               </a>
               <div className="dilivered-meals">
-                <CustomerGallery />
+                <ImageGallery images={images} className="dilivered-imgs" />
+
                 <p className="delivered-text">
                   <span>250,000+</span> meals delivered last year!
                 </p>
