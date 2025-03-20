@@ -1,6 +1,6 @@
 import "./Meals.css";
 import meal1 from "../assets/img/meals/meal-1.jpg";
-// import meal2 from "../assets/img/meals/meal-2.jpg";
+import meal2 from "../assets/img/meals/meal-2.jpg";
 
 const Meals = () => {
   return (
@@ -15,24 +15,69 @@ const Meals = () => {
       <div className="container grid grid--3--cols">
         <div className="meal">
           <img className="meal-img" src={meal1} alt="Japanese Gyozas" />
-          <span className="tag">Vegetarian</span>
-          <p className="meal-title">Japanese Gyozas</p>
-          <ul className="meal-attributes">
-            <li className="meal-attribute">
-              <ion-icon name="flame-outline"></ion-icon>
-              <span>650 Calories</span>
-            </li>
-            <li className="meal-attribute">
-              <ion-icon name="restaurant-outline"></ion-icon>
-              <span>NutriScore &reg; 74</span>
-            </li>
-            <li className="meal-attribute">
-              <ion-icon name="star-outline"></ion-icon>
-              <span>4.9 rating (537)</span>
-            </li>
-          </ul>
+          <div className="meal-content">
+            <div className="meal-tags">
+              <span className="tag tag--vegetarian">Vegetarian</span>
+            </div>
+            <p className="meal-title">Japanese Gyozas</p>
+            <ul className="meal-attributes">
+              <li className="meal-attribute">
+                <ion-icon className="meal-icon" name="flame-outline"></ion-icon>
+                <span>
+                  <strong>650</strong> Calories
+                </span>
+              </li>
+              <li className="meal-attribute">
+                <ion-icon
+                  className="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>
+                  NutriScore &reg; <strong>74</strong>
+                </span>
+              </li>
+              <li className="meal-attribute">
+                <ion-icon className="meal-icon" name="star-outline"></ion-icon>
+                <span>
+                  <strong>4.9</strong> rating (537)
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="meal">Melas</div>
+        <div className="meal">
+          <img className="meal-img" src={meal2} alt="Avocado Salad" />
+          <div className="meal-content">
+            <div className="meal-tags">
+              <span className="tag tag--vegan">Vegan</span>
+              <span className="tag tag--paleo">Paleo</span>
+            </div>
+            <p className="meal-title">Avocado Salad</p>
+            <ul className="meal-attributes">
+              <li className="meal-attribute">
+                <ion-icon className="meal-icon" name="flame-outline"></ion-icon>
+                <span>
+                  <strong>400</strong> Calories
+                </span>
+              </li>
+              <li className="meal-attribute">
+                <ion-icon
+                  className="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>
+                  NutriScore &reg; <strong>92</strong>
+                </span>
+              </li>
+              <li className="meal-attribute">
+                <ion-icon className="meal-icon" name="star-outline"></ion-icon>
+                <span>
+                  <strong>4.8</strong> rating (441)
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="list">List of diets</div>
       </div>
     </section>

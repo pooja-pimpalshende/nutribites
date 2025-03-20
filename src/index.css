@@ -23,6 +23,9 @@ paragraph:1.6
  0.5px
  0.75px
  
+- Border radius
+Default - 9px
+medium - 11
 --- 02 COLORS
 
 - Primary: #e67e22
@@ -88,4 +91,8 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+strong {
+  font-weight: 500;
 }
