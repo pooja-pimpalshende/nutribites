@@ -5,14 +5,14 @@ import meal2 from "../assets/img/meals/meal-2.jpg";
 const Meals = () => {
   return (
     <section className="section-meals">
-      <div className="container">
+      <div className="container center-text">
         <span className="subheading">Meals</span>
         <h2 className="heading-secondary">
-          Omnifood AI chooses from 5,000+ recipes
+          Nutribites AI chooses from 5,000+ recipes
         </h2>
       </div>
 
-      <div className="container grid grid--3--cols">
+      <div className="container grid grid--3--cols margin-bottom-md">
         <div className="meal">
           <img className="meal-img" src={meal1} alt="Japanese Gyozas" />
           <div className="meal-content">
@@ -78,7 +78,79 @@ const Meals = () => {
             </ul>
           </div>
         </div>
-        <div className="list">List of diets</div>
+        <div className="diets">
+          <h3 className="heading-tertiary">Works with any diet:</h3>
+          <div className="list">
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Vegetarian</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>{" "}
+              <span>Vegan</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Pescatarian</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Gluten-free</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Lactose-free</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>{" "}
+              <span>Keto</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>{" "}
+              <span>Paleo</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Low FODMAP</span>
+            </li>
+            <li className="list-item">
+              <ion-icon
+                className="list-icon"
+                name="checkmark-outline"
+              ></ion-icon>
+              <span>Kid-friendly</span>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div className="container all-recipes">
+        <a href="#" className="link">
+          See all recipes &rarr;
+        </a>
       </div>
     </section>
   );
