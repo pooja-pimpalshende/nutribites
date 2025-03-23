@@ -3,10 +3,13 @@ import img1 from "../assets/img/customers/dave.jpg";
 import img2 from "../assets/img/customers/ben.jpg";
 import img4 from "../assets/img/customers/hannah.jpg";
 import img3 from "../assets/img/customers/steve.jpg";
+import ImageGallery from "../utils/ImageGallery";
+
+const images = import.meta.glob("../assets/img/gallery/gallery-*.jpg");
 
 const Testimonials = () => {
   return (
-    <section className="section-testimonials grid grid--2--cols">
+    <section className="section-testimonials">
       <div className="testimonials-container">
         <span className="subheading">Testimonials</span>
         <h2 className="heading-secondary">
@@ -68,7 +71,9 @@ const Testimonials = () => {
           </figure>
         </div>
       </div>
-      <div className="gallery">Gallery</div>
+      <div className="gallery">
+        <ImageGallery images={images} className="gallery-item" />
+      </div>
     </section>
   );
 };

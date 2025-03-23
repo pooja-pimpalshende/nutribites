@@ -33,7 +33,9 @@ medium - 11
 #fdf2e9
 #f5e3d2
 - Shades : #cf711f;
-- Greys: #555
+- Greys:
+#6f6f6f(lightest grey allowed on  #fdf2e9)
+#555
 #333
 
 */
