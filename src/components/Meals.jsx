@@ -80,7 +80,7 @@ const Meals = () => {
         </div>
         <div className="diets">
           <h3 className="heading-tertiary">Works with any diet:</h3>
-          <div className="list">
+          <ul className="list">
             <li className="list-item">
               <ion-icon
                 className="list-icon"
@@ -144,7 +144,7 @@ const Meals = () => {
               ></ion-icon>
               <span>Kid-friendly</span>
             </li>
-          </div>
+          </ul>
         </div>
       </div>
       <div className="container all-recipes">
