@@ -1,4 +1,5 @@
 import "./App.css";
+import CallToAction from "./components/CallToAction";
 import FeaturedIn from "./components/FeaturedIn";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -17,6 +18,7 @@ function App() {
       <Meals />
       <Testimonials />
       <Pricing />
+      <CallToAction />
     </>
   );
 }
