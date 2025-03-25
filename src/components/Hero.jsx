@@ -1,6 +1,5 @@
 import "./Hero.css";
 import heroImg from "../assets/img/hero.png";
-import Header from "./Header";
 import ImageGallery from "../utils/ImageGallery";
 
 const images = import.meta.glob("../assets/img/customers/customer-*.jpg");

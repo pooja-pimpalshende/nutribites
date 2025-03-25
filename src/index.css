@@ -36,6 +36,8 @@ medium - 11
 #45260a
 - Shades : #cf711f;
 - Greys:
+#888
+#767676
 #6f6f6f(lightest grey allowed on  #fdf2e9)
 #555
 #333
@@ -101,6 +103,10 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {

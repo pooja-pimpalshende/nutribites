@@ -1,6 +1,7 @@
 import "./App.css";
 import CallToAction from "./components/CallToAction";
 import FeaturedIn from "./components/FeaturedIn";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
@@ -19,6 +20,7 @@ function App() {
       <Testimonials />
       <Pricing />
       <CallToAction />
+      <Footer />
     </>
   );
 }
