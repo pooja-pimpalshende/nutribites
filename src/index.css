@@ -45,9 +45,10 @@ medium - 11
 */
 
 html {
+  /* font-size: 10px; */
   /* 1 rem - 16px */
-  /* 10 / 16 = 62.5% */
-  /* Percentage of  users browsers font-sixe setting */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of  users browsers font-size setting */
   font-size: 62.5%;
 }
 

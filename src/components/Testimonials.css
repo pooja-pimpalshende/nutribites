@@ -55,3 +55,9 @@
 .gallery-item img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 84em) {
+  .gallery-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
