@@ -64,8 +64,20 @@
   }
 }
 
+/* BELOW 1200px (Landscape Tablets) */
 @media (max-width: 75em) {
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/* BELOW 920px (Tablets) */
+@media (max-width: 59em) {
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

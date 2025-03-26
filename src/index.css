@@ -18,6 +18,7 @@ Default: 1
 small: 1.05
 medium: 1.2
 paragraph:1.6
+large: 1.8
 
 - Letter spacing
  0.5px
@@ -142,6 +143,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -245,5 +247,18 @@ strong {
   .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 */
+    font-size: 50%;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
   }
 }

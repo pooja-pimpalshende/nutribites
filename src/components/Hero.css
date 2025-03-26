@@ -83,9 +83,34 @@
   }
 }
 
+/* BELOW 1200px (Landscape Tablets) */
 @media (max-width: 75em) {
   .hero {
     max-width: 120rem;
     gap: 4.8rem;
+  }
+}
+
+/* BELOW 920px (Tablets) */
+
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .dilivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
   }
 }

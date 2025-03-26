@@ -50,9 +50,10 @@
   background-color: #cf711f;
 }
 
+/* BELOW 1200px (Landscap tablets) */
 @media (max-width: 75em) {
   .header {
-    padding: 0 7.2rem;
+    padding: 0 1.2rem;
   }
   .main-nav-list {
     gap: 3.2rem;
