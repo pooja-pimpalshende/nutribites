@@ -14,7 +14,7 @@ const CallToAction = () => {
             </p>
             <form className="cta-form" action="#">
               <div>
-                <label for="full-name">Full Name</label>
+                <label htmlFor="full-name">Full Name</label>
                 <input
                   id="full-name"
                   type="text"
@@ -24,7 +24,7 @@ const CallToAction = () => {
               </div>
 
               <div>
-                <label for="email">Email Address</label>
+                <label htmlFor="email">Email Address</label>
                 <input
                   id="email"
                   type="email"
@@ -34,7 +34,9 @@ const CallToAction = () => {
               </div>
 
               <div>
-                <label for="select-where">Where did you here from us?</label>
+                <label htmlFor="select-where">
+                  Where did you here from us?
+                </label>
                 <select id="select-where" required>
                   <option value="">Please select one option:</option>
                   <option value="facebook">Facebook</option>
