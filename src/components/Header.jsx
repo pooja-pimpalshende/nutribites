@@ -5,7 +5,7 @@ import logoImg from "../assets/img/nutribites-logo.png";
 const Header = () => {
   return (
     <>
-      <header className="header">
+      <header className="header nav-open">
         <a href="#">
           <img className="logo" src={logoImg} alt="logo image" />
         </a>
@@ -38,6 +38,13 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <button className="btn-mobile-nav">
+          <ion-icon className="icon-monbile-nav" name="menu-outline"></ion-icon>
+          <ion-icon
+            className="icon-monbile-nav"
+            name="close-outline"
+          ></ion-icon>
+        </button>
       </header>
     </>
   );
