@@ -92,7 +92,7 @@ const Meals = () => {
               <ion-icon
                 className="list-icon"
                 name="checkmark-outline"
-              ></ion-icon>{" "}
+              ></ion-icon>
               <span>Vegan</span>
             </li>
             <li className="list-item">

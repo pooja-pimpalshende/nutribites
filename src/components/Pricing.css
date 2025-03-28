@@ -101,3 +101,10 @@
   font-size: 1.8rem;
   line-height: 1.8rem;
 }
+
+/* BELOW 704px (Smaller Tablets) */
+@media (max-width: 44em) {
+  .pricing-paln {
+    width: 100%;
+  }
+}
