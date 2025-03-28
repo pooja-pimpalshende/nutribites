@@ -12,6 +12,7 @@
 
 .logo {
   height: 4.8rem;
+  cursor: pointer;
 }
 
 .main-nav-list {

@@ -2,6 +2,7 @@ import "./Header.css";
 import logoImg from "../assets/img/nutribites-logo.png";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 // import logoImg from "../assets/img/omnifood-logo.png";
 
 const Header = () => {
@@ -20,29 +21,54 @@ const Header = () => {
         <nav className="main-nav">
           <ul className="main-nav-list">
             <li>
-              <a className="main-nav-link" href="#">
+              <HashLink
+                className="main-nav-link"
+                smooth
+                to="/#how-it-works"
+                onClick={handleOnClick}
+              >
                 How it works
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="main-nav-link" href="#">
+              <HashLink
+                className="main-nav-link"
+                smooth
+                to="/#meals"
+                onClick={handleOnClick}
+              >
                 Meals
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="main-nav-link" href="#">
+              <HashLink
+                className="main-nav-link"
+                smooth
+                to="/#testimonials"
+                onClick={handleOnClick}
+              >
                 Testimonials
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="main-nav-link" href="#">
+              <HashLink
+                className="main-nav-link"
+                smooth
+                to="/#pricing"
+                onClick={handleOnClick}
+              >
                 Pricing
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="main-nav-link nav-cta" href="#">
+              <HashLink
+                className="main-nav-link nav-cta"
+                smooth
+                to="/#call-to-action"
+                onClick={handleOnClick}
+              >
                 Try for free
-              </a>
+              </HashLink>
             </li>
           </ul>
         </nav>

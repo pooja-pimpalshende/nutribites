@@ -9,7 +9,7 @@ const images = import.meta.glob("../assets/img/gallery/gallery-*.jpg");
 
 const Testimonials = () => {
   return (
-    <section className="section-testimonials">
+    <section className="section-testimonials" id="testimonials">
       <div className="testimonials-container">
         <span className="subheading">Testimonials</span>
         <h2 className="heading-secondary">

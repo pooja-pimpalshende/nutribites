@@ -1,6 +1,7 @@
 import "./Hero.css";
 import heroImg from "../assets/img/hero.png";
 import ImageGallery from "../utils/ImageGallery";
+import { HashLink } from "react-router-hash-link";
 
 const images = import.meta.glob("../assets/img/customers/customer-*.jpg");
 
@@ -19,12 +20,16 @@ const Hero = () => {
                 eat healthy again. Tailored to your personal tastes and
                 nutritional needs.
               </p>
-              <a href="#" className="btn btn--full margin-right-sm">
+              <HashLink
+                smooth
+                to="/#call-to-action"
+                className="btn btn--full margin-right-sm"
+              >
                 Start eating well
-              </a>
-              <a href="#" className="btn btn--outline">
+              </HashLink>
+              <HashLink smooth to="/#how-it-works" className="btn btn--outline">
                 Learn more &darr;
-              </a>
+              </HashLink>
               <div className="dilivered-meals">
                 <ImageGallery images={images} className="dilivered-imgs" />
 

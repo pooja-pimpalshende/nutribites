@@ -2,7 +2,7 @@ import "./CallToAction.css";
 
 const CallToAction = () => {
   return (
-    <section className="section-cta">
+    <section className="section-cta" id="call-to-action">
       <div className="container  ">
         <div className="cta">
           <div className="cta-text-box">

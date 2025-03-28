@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import CallToAction from "./components/CallToAction";
 import FeaturedIn from "./components/FeaturedIn";
@@ -8,19 +9,22 @@ import HowItWorks from "./components/HowItWorks";
 import Meals from "./components/Meals";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <FeaturedIn />
-      <HowItWorks />
-      <Meals />
-      <Testimonials />
-      <Pricing />
-      <CallToAction />
-      <Footer />
+      <Router>
+        <Header />
+        <Hero />
+        <FeaturedIn />
+        <HowItWorks />
+        <Meals />
+        <Testimonials />
+        <Pricing />
+        <CallToAction />
+        <Footer />
+      </Router>
     </>
   );
 }
