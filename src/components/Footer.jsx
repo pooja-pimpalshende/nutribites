@@ -2,6 +2,8 @@ import "./Footer.css";
 import logoImg from "../assets/img/nutribites-logo.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="container grid grid--5--cols grid--footer ">
@@ -38,7 +40,7 @@ const Footer = () => {
           </ul>
 
           <p className="copyright">
-            &copy; 2025 by Nutribites, Inc. All rights reserved.
+            &copy; {currentYear} by Nutribites, Inc. All rights reserved.
           </p>
         </div>
 
