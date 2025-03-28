@@ -114,3 +114,18 @@
     margin-top: 3.2rem;
   }
 }
+
+/* BELOW 544px (Phones) */
+@media (max-width: 34em) {
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+}

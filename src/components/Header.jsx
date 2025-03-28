@@ -5,7 +5,8 @@ import logoImg from "../assets/img/nutribites-logo.png";
 const Header = () => {
   return (
     <>
-      <header className="header nav-open">
+      {/* <header className="header nav-open"> */}
+      <header className="header">
         <a href="#">
           <img className="logo" src={logoImg} alt="logo image" />
         </a>

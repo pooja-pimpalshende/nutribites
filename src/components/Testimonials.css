@@ -81,3 +81,15 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
+
+/* BELOW 544px (Phones) */
+@media (max-width: 34em) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+}
