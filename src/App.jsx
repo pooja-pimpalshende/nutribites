@@ -17,6 +17,7 @@ function App() {
   const heroRef = useRef(null);
 
   useEffect(() => {
+    const curElVal = heroRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsSticky(!entry.isIntersecting);
@@ -27,8 +28,14 @@ function App() {
         rootMargin: "-70px",
       }
     );
-    if (heroRef.current) observer.observe(heroRef.current);
-  });
+    if (curElVal) observer.observe(curElVal);
+
+    return () => {
+      if (curElVal) {
+        observer.unobserve(curElVal);
+      }
+    };
+  }, []);
 
   return (
     <div className={`${isSticky ? "sticky" : ""}`}>
