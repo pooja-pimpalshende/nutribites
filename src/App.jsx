@@ -10,13 +10,31 @@ import Meals from "./components/Meals";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import { Route } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
+  const [isSticky, setIsSticky] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSticky(!entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "-70px",
+      }
+    );
+    if (heroRef.current) observer.observe(heroRef.current);
+  });
+
   return (
-    <>
+    <div className={`${isSticky ? "sticky" : ""}`}>
       <Router>
         <Header />
-        <Hero />
+        <Hero heroRef={heroRef} />
         <FeaturedIn />
         <HowItWorks />
         <Meals />
@@ -25,7 +43,7 @@ function App() {
         <CallToAction />
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 
