@@ -12,13 +12,14 @@ const CallToAction = () => {
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-            <form className="cta-form" action="#">
+            <form className="cta-form" name="sign-up" netlify>
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
+                  name="full-name"
                   required
                 />
               </div>
@@ -29,6 +30,7 @@ const CallToAction = () => {
                   id="email"
                   type="email"
                   placeholder="me@example.com"
+                  name="email"
                   required
                 />
               </div>
@@ -37,7 +39,7 @@ const CallToAction = () => {
                 <label htmlFor="select-where">
                   Where did you here from us?
                 </label>
-                <select id="select-where" required>
+                <select id="select-where" required name="select-where">
                   <option value="">Please select one option:</option>
                   <option value="facebook">Facebook</option>
                   <option value="youtube">Youtude</option>
