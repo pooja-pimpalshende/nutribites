@@ -1,5 +1,6 @@
 import "./Hero.css";
 import heroImg from "../assets/img/hero.png";
+import heroImgWebp from "../assets/img/hero.webp";
 import ImageGallery from "../utils/ImageGallery";
 import { HashLink } from "react-router-hash-link";
 
@@ -38,11 +39,15 @@ const Hero = ({ heroRef }) => {
             </div>
           </div>
           <div className="hero-img-box">
-            <img
-              src={heroImg}
-              className="hero-img"
-              alt="Women enjoying food, meals in storage container and food bowls on a table"
-            />
+            <picture>
+              <source srcSet={heroImgWebp} type="image/webp" />
+              <source srcSet={heroImg} type="image/png" />
+              <img
+                src={heroImg}
+                className="hero-img"
+                alt="Women enjoying food, meals in storage container and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
