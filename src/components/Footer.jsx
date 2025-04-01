@@ -93,7 +93,7 @@ const Footer = () => {
           <ul className="footer-nav">
             <li>
               <a className="footer-link" href="#">
-                About Omnifood
+                About Nutribites
               </a>
             </li>
             <li>

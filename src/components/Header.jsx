@@ -3,7 +3,6 @@ import logoImg from "../assets/img/nutribites-logo.png";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-// import logoImg from "../assets/img/omnifood-logo.png";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

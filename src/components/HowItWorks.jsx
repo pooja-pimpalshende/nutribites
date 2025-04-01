@@ -22,7 +22,7 @@ const HowItWorks = () => {
               Tell us what you like (and what not)
             </h3>
             <p className="step-description">
-              Never again waste time thinking about what to eat! Omnifood AI
+              Never again waste time thinking about what to eat! Nutribites AI
               will create a 100% personalized weekly meal plan just for you. It
               makes sure you get all the nutrients and vitamins you need, no
               matter what diet you follow!
@@ -48,9 +48,9 @@ const HowItWorks = () => {
             <p className="step-number">02</p>
             <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
             <p className="step-description">
-              Once per week, approve the meal plan generated for you by Omnifood
-              AI. You can change ingredients, swap entire meals, or even add
-              your own recipes.
+              Once per week, approve the meal plan generated for you by
+              Nutribites AI. You can change ingredients, swap entire meals, or
+              even add your own recipes.
             </p>
           </div>
 
