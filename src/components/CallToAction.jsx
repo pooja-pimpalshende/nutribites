@@ -17,6 +17,7 @@ const CallToAction = () => {
               name="sign-up"
               method="post"
               data-netlify="true"
+              action="/"
             >
               <div>
                 <label htmlFor="full-name">Full Name</label>
