@@ -17,8 +17,8 @@ const CallToAction = () => {
               name="sign-up"
               method="post"
               data-netlify="true"
-              action="/"
             >
+              <input type="hidden" name="form-name" value="sign-up" />
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
