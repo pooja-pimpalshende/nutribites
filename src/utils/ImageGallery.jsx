@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const ImageGallery = ({ images, className }) => {
   const [imageUrls, setImageUrls] = useState([]);
-  // console.log(images);
+
   useEffect(() => {
     Promise.all(
       Object.values(images).map((importFn) =>

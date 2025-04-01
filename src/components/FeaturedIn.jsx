@@ -2,7 +2,6 @@ import "./FeaturedIn.css";
 import ImageGallery from "../utils/ImageGallery";
 
 const images = import.meta.glob("../assets/img/logos/*");
-console.log(images);
 
 const FeaturedIn = () => {
   return (
